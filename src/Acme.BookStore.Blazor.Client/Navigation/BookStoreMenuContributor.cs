@@ -38,7 +38,7 @@ public class BookStoreMenuContributor : IMenuContributor
     private static async Task ConfigureMainMenuAsync(MenuConfigurationContext context)
     {
         var l = context.GetLocalizer<BookStoreResource>();
-        
+
         //Administration
         var administration = context.Menu.GetAdministration();
         administration.Order = 6;
@@ -61,6 +61,21 @@ public class BookStoreMenuContributor : IMenuContributor
 
         administration.SetSubItemOrder(IdentityMenuNames.GroupName, 2);
         administration.SetSubItemOrder(SettingManagementMenus.GroupName, 3);
+
+        context.Menu.AddItem(
+            new ApplicationMenuItem(
+                "BooksStore",
+                l["Menu:BookStore"],
+                icon: "fa fa-book"
+            ).AddItem(
+                new ApplicationMenuItem(
+                    "BooksStore.Books",
+                    l["Menu:Books"],
+                    url: "/books"
+                )
+            )
+);
+
     }
 
     private async Task ConfigureUserMenuAsync(MenuConfigurationContext context)
