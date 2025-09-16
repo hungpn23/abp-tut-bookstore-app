@@ -1,4 +1,7 @@
 @page "/books"
+@attribute [Authorize(BookStorePermissions.Books.Default)]
+@using Acme.BookStore.Permissions
+@using Microsoft.AspNetCore.Authorization
 @using Volo.Abp.Application.Dtos
 @using Acme.BookStore.Books
 @using Acme.BookStore.Localization
@@ -14,57 +17,42 @@
                 <h2>@L["Books"]</h2>
             </Column>
             <Column ColumnSize="ColumnSize.IsAuto">
-                <Button Color="Color.Primary"
-                        Clicked="OpenCreateModalAsync">@L["NewBook"]</Button>
+                @if (HasCreatePermission)
+                {
+                    <Button Color="Color.Primary" Clicked="OpenCreateModalAsync">@L["NewBook"]</Button>
+                }
             </Column>
         </Row>
     </CardHeader>
     <CardBody>
-        <DataGrid TItem="BookDto"
-                  Data="Entities"
-                  ReadData="OnDataGridReadAsync"
-                  CurrentPage="CurrentPage"
-                  TotalItems="TotalCount"
-                  ShowPager="true"
-                  PageSize="PageSize">
+        <DataGrid TItem="BookDto" Data="Entities" ReadData="OnDataGridReadAsync" CurrentPage="CurrentPage"
+            TotalItems="TotalCount" ShowPager="true" PageSize="PageSize">
             <DataGridColumns>
                 <DataGridEntityActionsColumn TItem="BookDto" @ref="@EntityActionsColumn">
                     <DisplayTemplate>
                         <EntityActions TItem="BookDto" EntityActionsColumn="@EntityActionsColumn">
-                            <EntityAction TItem="BookDto"
-                                          Text="@L["Edit"]"
-                                          Clicked="() => OpenEditModalAsync(context)" />
-                            <EntityAction TItem="BookDto"
-                                          Text="@L["Delete"]"
-                                          Clicked="() => DeleteEntityAsync(context)"
-                                          ConfirmationMessage="()=>GetDeleteConfirmationMessage(context)" />
+                            <EntityAction TItem="BookDto" Text="@L["Edit"]" Visible=HasUpdatePermission
+                                Clicked="() => OpenEditModalAsync(context)" />
+                            <EntityAction TItem="BookDto" Text="@L["Delete"]" Visible=HasDeletePermission
+                                Clicked="() => DeleteEntityAsync(context)"
+                                ConfirmationMessage="()=>GetDeleteConfirmationMessage(context)" />
                         </EntityActions>
                     </DisplayTemplate>
                 </DataGridEntityActionsColumn>
-                <DataGridColumn TItem="BookDto"
-                                Field="@nameof(BookDto.Name)"
-                                Caption="@L["Name"]"></DataGridColumn>
-                <DataGridColumn TItem="BookDto"
-                                Field="@nameof(BookDto.Type)"
-                                Caption="@L["Type"]">
+                <DataGridColumn TItem="BookDto" Field="@nameof(BookDto.Name)" Caption="@L["Name"]"></DataGridColumn>
+                <DataGridColumn TItem="BookDto" Field="@nameof(BookDto.Type)" Caption="@L["Type"]">
                     <DisplayTemplate>
                         @L[$"Enum:BookType.{context.Type:D}"]
                     </DisplayTemplate>
                 </DataGridColumn>
-                <DataGridColumn TItem="BookDto"
-                                Field="@nameof(BookDto.PublishDate)"
-                                Caption="@L["PublishDate"]">
+                <DataGridColumn TItem="BookDto" Field="@nameof(BookDto.PublishDate)" Caption="@L["PublishDate"]">
                     <DisplayTemplate>
                         @context.PublishDate.ToShortDateString()
                     </DisplayTemplate>
                 </DataGridColumn>
-                <DataGridColumn TItem="BookDto"
-                                Field="@nameof(BookDto.Price)"
-                                Caption="@L["Price"]">
+                <DataGridColumn TItem="BookDto" Field="@nameof(BookDto.Price)" Caption="@L["Price"]">
                 </DataGridColumn>
-                <DataGridColumn TItem="BookDto"
-                                Field="@nameof(BookDto.CreationTime)"
-                                Caption="@L["CreationTime"]">
+                <DataGridColumn TItem="BookDto" Field="@nameof(BookDto.CreationTime)" Caption="@L["CreationTime"]">
                     <DisplayTemplate>
                         @context.CreationTime.ToLongDateString()
                     </DisplayTemplate>
@@ -80,7 +68,7 @@
         <Form>
             <ModalHeader>
                 <ModalTitle>@L["NewBook"]</ModalTitle>
-                <CloseButton Clicked="CloseCreateModalAsync"/>
+                <CloseButton Clicked="CloseCreateModalAsync" />
             </ModalHeader>
             <ModalBody>
                 <Validations @ref="@CreateValidationsRef" Model="@NewEntity" ValidateOnLoad="false">
@@ -89,7 +77,7 @@
                             <FieldLabel>@L["Name"]</FieldLabel>
                             <TextEdit @bind-Text="@NewEntity.Name">
                                 <Feedback>
-                                    <ValidationError/>
+                                    <ValidationError />
                                 </Feedback>
                             </TextEdit>
                         </Field>
@@ -99,7 +87,7 @@
                         <Select TValue="BookType" @bind-SelectedValue="@NewEntity.Type">
                             @foreach (int bookTypeValue in Enum.GetValues(typeof(BookType)))
                             {
-                                <SelectItem TValue="BookType" Value="@((BookType) bookTypeValue)">
+                                <SelectItem TValue="BookType" Value="@((BookType)bookTypeValue)">
                                     @L[$"Enum:BookType.{bookTypeValue}"]
                                 </SelectItem>
                             }
@@ -107,21 +95,18 @@
                     </Field>
                     <Field>
                         <FieldLabel>@L["PublishDate"]</FieldLabel>
-                        <DateEdit TValue="DateTime" @bind-Date="NewEntity.PublishDate"/>
+                        <DateEdit TValue="DateTime" @bind-Date="NewEntity.PublishDate" />
                     </Field>
                     <Field>
                         <FieldLabel>@L["Price"]</FieldLabel>
-                        <NumericEdit TValue="float" @bind-Value="NewEntity.Price"/>
+                        <NumericEdit TValue="float" @bind-Value="NewEntity.Price" />
                     </Field>
                 </Validations>
             </ModalBody>
             <ModalFooter>
-                <Button Color="Color.Secondary"
-                        Clicked="CloseCreateModalAsync">@L["Cancel"]</Button>
-                <Button Color="Color.Primary"
-                        Type="@ButtonType.Submit"
-                        PreventDefaultOnSubmit="true"
-                        Clicked="CreateEntityAsync">@L["Save"]</Button>
+                <Button Color="Color.Secondary" Clicked="CloseCreateModalAsync">@L["Cancel"]</Button>
+                <Button Color="Color.Primary" Type="@ButtonType.Submit" PreventDefaultOnSubmit="true"
+                    Clicked="CreateEntityAsync">@L["Save"]</Button>
             </ModalFooter>
         </Form>
     </ModalContent>
@@ -133,7 +118,7 @@
         <Form>
             <ModalHeader>
                 <ModalTitle>@EditingEntity.Name</ModalTitle>
-                <CloseButton Clicked="CloseEditModalAsync"/>
+                <CloseButton Clicked="CloseEditModalAsync" />
             </ModalHeader>
             <ModalBody>
                 <Validations @ref="@EditValidationsRef" Model="@NewEntity" ValidateOnLoad="false">
@@ -142,7 +127,7 @@
                             <FieldLabel>@L["Name"]</FieldLabel>
                             <TextEdit @bind-Text="@EditingEntity.Name">
                                 <Feedback>
-                                    <ValidationError/>
+                                    <ValidationError />
                                 </Feedback>
                             </TextEdit>
                         </Field>
@@ -152,7 +137,7 @@
                         <Select TValue="BookType" @bind-SelectedValue="@EditingEntity.Type">
                             @foreach (int bookTypeValue in Enum.GetValues(typeof(BookType)))
                             {
-                                <SelectItem TValue="BookType" Value="@((BookType) bookTypeValue)">
+                                <SelectItem TValue="BookType" Value="@((BookType)bookTypeValue)">
                                     @L[$"Enum:BookType.{bookTypeValue}"]
                                 </SelectItem>
                             }
@@ -160,21 +145,18 @@
                     </Field>
                     <Field>
                         <FieldLabel>@L["PublishDate"]</FieldLabel>
-                        <DateEdit TValue="DateTime" @bind-Date="EditingEntity.PublishDate"/>
+                        <DateEdit TValue="DateTime" @bind-Date="EditingEntity.PublishDate" />
                     </Field>
                     <Field>
                         <FieldLabel>@L["Price"]</FieldLabel>
-                        <NumericEdit TValue="float" @bind-Value="EditingEntity.Price"/>
+                        <NumericEdit TValue="float" @bind-Value="EditingEntity.Price" />
                     </Field>
                 </Validations>
             </ModalBody>
             <ModalFooter>
-                <Button Color="Color.Secondary"
-                        Clicked="CloseEditModalAsync">@L["Cancel"]</Button>
-                <Button Color="Color.Primary"
-                        Type="@ButtonType.Submit"
-                        PreventDefaultOnSubmit="true"
-                        Clicked="UpdateEntityAsync">@L["Save"]</Button>
+                <Button Color="Color.Secondary" Clicked="CloseEditModalAsync">@L["Cancel"]</Button>
+                <Button Color="Color.Primary" Type="@ButtonType.Submit" PreventDefaultOnSubmit="true"
+                    Clicked="UpdateEntityAsync">@L["Save"]</Button>
             </ModalFooter>
         </Form>
     </ModalContent>
@@ -185,5 +167,9 @@
     public Books() // Constructor
     {
         LocalizationResource = typeof(BookStoreResource);
+
+        CreatePolicyName = BookStorePermissions.Books.Create;
+        UpdatePolicyName = BookStorePermissions.Books.Edit;
+        DeletePolicyName = BookStorePermissions.Books.Delete;
     }
 }
