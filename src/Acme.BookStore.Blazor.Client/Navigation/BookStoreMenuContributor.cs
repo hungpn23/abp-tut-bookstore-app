@@ -3,14 +3,9 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Acme.BookStore.Localization;
 using Acme.BookStore.Permissions;
-using Acme.BookStore.MultiTenancy;
 using Volo.Abp.Account.Localization;
 using Volo.Abp.UI.Navigation;
 using Volo.Abp.Authorization.Permissions;
-using Volo.Abp.SettingManagement.Blazor.Menus;
-using Volo.Abp.Users;
-using Volo.Abp.TenantManagement.Blazor.Navigation;
-using Volo.Abp.Identity.Blazor;
 
 namespace Acme.BookStore.Blazor.Client.Navigation;
 
