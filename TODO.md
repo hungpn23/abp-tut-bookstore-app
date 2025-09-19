@@ -12,8 +12,8 @@
 
 7. [x] https://abp.io/docs/latest/tutorials/book-store/part-07?UI=Blazor&DB=EF
 
-8. [ ] https://abp.io/docs/latest/tutorials/book-store/part-08?UI=Blazor&DB=EF
+8. [x] https://abp.io/docs/latest/tutorials/book-store/part-08?UI=Blazor&DB=EF
 
-9. [ ] https://abp.io/docs/latest/tutorials/book-store/part-09?UI=Blazor&DB=EF
+9. [x] https://abp.io/docs/latest/tutorials/book-store/part-09?UI=Blazor&DB=EF
 
 10. [ ] https://abp.io/docs/latest/tutorials/book-store/part-10?UI=Blazor&DB=EF

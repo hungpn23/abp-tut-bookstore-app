@@ -7874,3 +7874,397 @@
 2025-09-16 21:50:14.472 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
 2025-09-16 21:50:14.472 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise.Bootstrap5/modal.js?v=1.8.1.0 - 304 null text/javascript 0.2956ms
 2025-09-16 23:07:00.979 +07:00 [INF] Application is shutting down...
+2025-09-19 08:40:52.447 +07:00 [INF] Starting web host.
+2025-09-19 08:40:52.841 +07:00 [DBG] Loaded ABP modules:
+2025-09-19 08:40:52.841 +07:00 [DBG] - Acme.BookStore.Blazor.BookStoreBlazorModule
+2025-09-19 08:40:52.841 +07:00 [DBG]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-09-19 08:40:52.841 +07:00 [DBG]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-09-19 08:40:52.841 +07:00 [DBG]   - Volo.Abp.AspNetCore.Components.WebAssembly.LeptonXLiteTheme.Bundling.AbpAspNetCoreComponentsWebAssemblyLeptonXLiteThemeBundlingModule
+2025-09-19 08:40:52.841 +07:00 [DBG]     - Volo.Abp.AspNetCore.Components.WebAssembly.Theming.Bundling.AbpAspNetCoreComponentsWebAssemblyThemingBundlingModule
+2025-09-19 08:40:52.841 +07:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-09-19 08:40:52.841 +07:00 [DBG]   - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-09-19 08:40:52.841 +07:00 [DBG]     - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-09-19 08:40:52.842 +07:00 [DBG]       - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-09-19 08:40:52.842 +07:00 [DBG]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-09-19 08:40:52.842 +07:00 [DBG]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-09-19 08:40:52.842 +07:00 [DBG]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.Data.AbpDataModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                 - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                   - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                 - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                 - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.Json.AbpJsonModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                 - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                   - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                   - Volo.Abp.Timing.AbpTimingModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                     - Volo.Abp.Localization.AbpLocalizationModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                       - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                       - Volo.Abp.Settings.AbpSettingsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                         - Volo.Abp.Security.AbpSecurityModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                       - Volo.Abp.Threading.AbpThreadingModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]             - Volo.Abp.Http.AbpHttpModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.Minify.AbpMinifyModule
+2025-09-19 08:40:52.842 +07:00 [DBG]             - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]             - Volo.Abp.Validation.AbpValidationModule
+2025-09-19 08:40:52.842 +07:00 [DBG]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-09-19 08:40:52.842 +07:00 [DBG]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-09-19 08:40:52.842 +07:00 [DBG]             - Volo.Abp.UI.AbpUiModule
+2025-09-19 08:40:52.842 +07:00 [DBG]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-09-19 08:40:52.842 +07:00 [DBG]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-09-19 08:40:52.842 +07:00 [DBG]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.EventBus.AbpEventBusModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                 - Volo.Abp.Guids.AbpGuidsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                 - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                 - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.Caching.AbpCachingModule
+2025-09-19 08:40:52.842 +07:00 [DBG]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-09-19 08:40:52.842 +07:00 [DBG]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-09-19 08:40:52.842 +07:00 [DBG]             - Volo.Abp.Features.AbpFeaturesModule
+2025-09-19 08:40:52.842 +07:00 [DBG]     - Volo.Abp.AspNetCore.Bundling.AbpAspNetCoreBundlingModule
+2025-09-19 08:40:53.107 +07:00 [INF] User profile is available. Using '/Users/hungpn23/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-19 08:40:53.248 +07:00 [INF] Initialized all ABP modules.
+2025-09-19 08:40:53.407 +07:00 [INF] Now listening on: https://localhost:44388
+2025-09-19 08:40:53.407 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-19 08:40:53.408 +07:00 [INF] Hosting environment: Development
+2025-09-19 08:40:53.408 +07:00 [INF] Content root path: /Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor
+2025-09-19 08:40:56.367 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/ - null null
+2025-09-19 08:40:59.457 +07:00 [INF] Executing endpoint '/ (/)'
+2025-09-19 08:40:59.483 +07:00 [INF] Executed endpoint '/ (/)'
+2025-09-19 08:40:59.485 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/ - 200 null text/html; charset=utf-8 3118.0902ms
+2025-09-19 08:40:59.516 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/Acme.BookStore.Blazor.Client.styles.css - null null
+2025-09-19 08:40:59.516 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/blazor.web.js - null null
+2025-09-19 08:40:59.516 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/global.css - null null
+2025-09-19 08:40:59.516 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/global.js - null null
+2025-09-19 08:40:59.518 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-09-19 08:40:59.519 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.520 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-09-19 08:40:59.520 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-09-19 08:40:59.520 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/blazor.web.js - 304 null text/javascript 3.9485ms
+2025-09-19 08:40:59.522 +07:00 [INF] Sending file. Request path: 'Acme.BookStore.Blazor.Client.styles.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/8kse7j5v2y-xg1yoq7g4i.gz'
+2025-09-19 08:40:59.522 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.522 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/Acme.BookStore.Blazor.Client.styles.css - 200 527 text/css 6.5549ms
+2025-09-19 08:40:59.534 +07:00 [INF] Sending file. Request path: '/global.js'. Physical path: 'N/A'
+2025-09-19 08:40:59.534 +07:00 [INF] Sending file. Request path: '/global.css'. Physical path: 'N/A'
+2025-09-19 08:40:59.535 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/global.css - 200 734152 text/css 19.0011ms
+2025-09-19 08:40:59.535 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/global.js - 200 677946 application/javascript 18.4557ms
+2025-09-19 08:40:59.739 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.PermissionManagement.Blazor/Volo.Abp.PermissionManagement.Blazor.p33ll9g8os.bundle.scp.css - null null
+2025-09-19 08:40:59.775 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.775 +07:00 [INF] The file _content/Volo.Abp.PermissionManagement.Blazor/Volo.Abp.PermissionManagement.Blazor.p33ll9g8os.bundle.scp.css was not modified
+2025-09-19 08:40:59.775 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.775 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.PermissionManagement.Blazor/Volo.Abp.PermissionManagement.Blazor.p33ll9g8os.bundle.scp.css - 304 null text/css 36.7047ms
+2025-09-19 08:40:59.790 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-09-19 08:40:59.790 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-09-19 08:40:59.790 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-09-19 08:40:59.790 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-09-19 08:40:59.790 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/dotnet.js - null null
+2025-09-19 08:40:59.790 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-09-19 08:40:59.791 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.791 +07:00 [INF] The file _framework/dotnet.js was not modified
+2025-09-19 08:40:59.791 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.791 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/dotnet.js - 304 null text/javascript 0.6125ms
+2025-09-19 08:40:59.793 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/blazor.boot.json - null null
+2025-09-19 08:40:59.793 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.794 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.794 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.794 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.794 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.794 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.794 +07:00 [INF] The file _content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css was not modified
+2025-09-19 08:40:59.794 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.794 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 304 null text/css 3.954ms
+2025-09-19 08:40:59.795 +07:00 [INF] Sending file. Request path: '_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/m3eknofir4-rlu9ca3yha.gz'
+2025-09-19 08:40:59.795 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.795 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 200 3590 text/css 5.1349ms
+2025-09-19 08:40:59.795 +07:00 [INF] Sending file. Request path: '_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/rsrgg46xj8-y4zpupyy6l.gz'
+2025-09-19 08:40:59.796 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.796 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 200 161 text/css 5.3483ms
+2025-09-19 08:40:59.796 +07:00 [INF] Sending file. Request path: '_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/4fh1mvs9e3-rwlplotmc9.gz'
+2025-09-19 08:40:59.796 +07:00 [INF] Sending file. Request path: '_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/e7v19mgtln-fuml5o783n.gz'
+2025-09-19 08:40:59.796 +07:00 [INF] Sending file. Request path: '_framework/blazor.boot.json'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/2iaiytcdq0-vou2gge7yk.gz'
+2025-09-19 08:40:59.797 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.797 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.797 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.797 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 200 9548 text/css 6.6617ms
+2025-09-19 08:40:59.797 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/blazor.boot.json - 200 69604 application/json 3.739ms
+2025-09-19 08:40:59.797 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 200 27547 text/css 6.628ms
+2025-09-19 08:40:59.801 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/dotnet.native.50iqa8w3ys.js - null null
+2025-09-19 08:40:59.801 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/dotnet.runtime.ew19f13umk.js - null null
+2025-09-19 08:40:59.801 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.801 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.801 +07:00 [INF] The file _framework/dotnet.runtime.ew19f13umk.js was not modified
+2025-09-19 08:40:59.801 +07:00 [INF] The file _framework/dotnet.native.50iqa8w3ys.js was not modified
+2025-09-19 08:40:59.801 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.801 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/dotnet.runtime.ew19f13umk.js - 304 null text/javascript 0.2087ms
+2025-09-19 08:40:59.801 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.801 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/dotnet.native.50iqa8w3ys.js - 304 null text/javascript 0.3075ms
+2025-09-19 08:40:59.814 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/appsettings.Development.json - null null
+2025-09-19 08:40:59.815 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/appsettings.json - null null
+2025-09-19 08:40:59.815 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.815 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.817 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.HttpApi.Client.of5qrkg8zt.pdb - null null
+2025-09-19 08:40:59.817 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Domain.Shared.1ze7fqawik.pdb - null null
+2025-09-19 08:40:59.817 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Blazor.Client.pg8gdigew5.pdb - null null
+2025-09-19 08:40:59.817 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Application.Contracts.x596wynhqq.pdb - null null
+2025-09-19 08:40:59.817 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.817 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.817 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.817 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.818 +07:00 [INF] Sending file. Request path: 'appsettings.json'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/l2piqhif6c-15ynp5plw9.gz'
+2025-09-19 08:40:59.818 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.818 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/appsettings.json - 200 410 application/json 3.4687ms
+2025-09-19 08:40:59.818 +07:00 [INF] Sending file. Request path: 'appsettings.Development.json'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/2qjnoo21xg-qygrwjo5h3.gz'
+2025-09-19 08:40:59.818 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.818 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/appsettings.Development.json - 200 41 application/json 4.0273ms
+2025-09-19 08:40:59.822 +07:00 [INF] Sending file. Request path: '_framework/Acme.BookStore.HttpApi.Client.of5qrkg8zt.pdb'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/4lso9ic649-of5qrkg8zt.gz'
+2025-09-19 08:40:59.823 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.823 +07:00 [INF] Sending file. Request path: '_framework/Acme.BookStore.Domain.Shared.1ze7fqawik.pdb'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/hn8147371o-1ze7fqawik.gz'
+2025-09-19 08:40:59.823 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.823 +07:00 [INF] Sending file. Request path: '_framework/Acme.BookStore.Blazor.Client.pg8gdigew5.pdb'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/qoe0p70cxu-pg8gdigew5.gz'
+2025-09-19 08:40:59.823 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Domain.Shared.1ze7fqawik.pdb - 200 17429 application/octet-stream 5.7318ms
+2025-09-19 08:40:59.823 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.823 +07:00 [INF] Sending file. Request path: '_framework/Acme.BookStore.Application.Contracts.x596wynhqq.pdb'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/34xbh2ojso-x596wynhqq.gz'
+2025-09-19 08:40:59.823 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.823 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Blazor.Client.pg8gdigew5.pdb - 200 52742 application/octet-stream 5.8121ms
+2025-09-19 08:40:59.823 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Application.Contracts.x596wynhqq.pdb - 200 19393 application/octet-stream 5.8213ms
+2025-09-19 08:40:59.823 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.HttpApi.Client.of5qrkg8zt.pdb - 200 18165 application/octet-stream 6.1293ms
+2025-09-19 08:40:59.881 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Application.Contracts.jf8m5cilar.wasm - null null
+2025-09-19 08:40:59.881 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Domain.Shared.0r8dpfbpua.wasm - null null
+2025-09-19 08:40:59.881 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.HttpApi.Client.mw6z2l2dvz.wasm - null null
+2025-09-19 08:40:59.881 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Blazor.Client.y117sudmot.wasm - null null
+2025-09-19 08:40:59.882 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.882 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.882 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.882 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.884 +07:00 [INF] Sending file. Request path: '_framework/Acme.BookStore.Application.Contracts.jf8m5cilar.wasm'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/f4f945flfe-jf8m5cilar.gz'
+2025-09-19 08:40:59.884 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.884 +07:00 [INF] Sending file. Request path: '_framework/Acme.BookStore.HttpApi.Client.mw6z2l2dvz.wasm'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/rwhkov2jwb-mw6z2l2dvz.gz'
+2025-09-19 08:40:59.884 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.885 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.HttpApi.Client.mw6z2l2dvz.wasm - 200 7990 application/wasm 3.0925ms
+2025-09-19 08:40:59.885 +07:00 [INF] Sending file. Request path: '_framework/Acme.BookStore.Domain.Shared.0r8dpfbpua.wasm'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/1rbcp5w4r6-0r8dpfbpua.gz'
+2025-09-19 08:40:59.885 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Application.Contracts.jf8m5cilar.wasm - 200 14134 application/wasm 3.3018ms
+2025-09-19 08:40:59.885 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.885 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Domain.Shared.0r8dpfbpua.wasm - 200 45371 application/wasm 3.3537ms
+2025-09-19 08:40:59.887 +07:00 [INF] Sending file. Request path: '_framework/Acme.BookStore.Blazor.Client.y117sudmot.wasm'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/en8x3dibm8-y117sudmot.gz'
+2025-09-19 08:40:59.887 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:40:59.887 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/Acme.BookStore.Blazor.Client.y117sudmot.wasm - 200 92992 application/wasm 5.5287ms
+2025-09-19 08:41:02.440 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/authentication/login-callback?code=7vKTSFvsmo7dPnOTSzdHcu7eo9dggaRb-5v82s1q_Q8&state=0cd1a8a712e24347b7de9fe6d2d356ac&iss=https%3A%2F%2Flocalhost%3A44328%2F&culture=en&ui-culture=en - null null
+2025-09-19 08:41:02.441 +07:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-09-19 08:41:02.441 +07:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-09-19 08:41:02.442 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/authentication/login-callback?code=7vKTSFvsmo7dPnOTSzdHcu7eo9dggaRb-5v82s1q_Q8&state=0cd1a8a712e24347b7de9fe6d2d356ac&iss=https%3A%2F%2Flocalhost%3A44328%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 1.324ms
+2025-09-19 08:41:02.456 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/Acme.BookStore.Blazor.Client.styles.css - null null
+2025-09-19 08:41:02.456 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/global.css - null null
+2025-09-19 08:41:02.456 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/blazor.web.js - null null
+2025-09-19 08:41:02.456 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/global.js - null null
+2025-09-19 08:41:02.456 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.456 +07:00 [INF] The file /global.css was not modified
+2025-09-19 08:41:02.456 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-09-19 08:41:02.456 +07:00 [INF] The file /global.js was not modified
+2025-09-19 08:41:02.456 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/global.js - 304 null application/javascript 0.3904ms
+2025-09-19 08:41:02.456 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-09-19 08:41:02.456 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/global.css - 304 null text/css 0.4399ms
+2025-09-19 08:41:02.456 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-09-19 08:41:02.457 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/blazor.web.js - 304 null text/javascript 0.594ms
+2025-09-19 08:41:02.457 +07:00 [INF] Sending file. Request path: 'Acme.BookStore.Blazor.Client.styles.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/8kse7j5v2y-xg1yoq7g4i.gz'
+2025-09-19 08:41:02.457 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.457 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/Acme.BookStore.Blazor.Client.styles.css - 200 527 text/css 0.7883ms
+2025-09-19 08:41:02.487 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.PermissionManagement.Blazor/Volo.Abp.PermissionManagement.Blazor.p33ll9g8os.bundle.scp.css - null null
+2025-09-19 08:41:02.490 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.490 +07:00 [INF] The file _content/Volo.Abp.PermissionManagement.Blazor/Volo.Abp.PermissionManagement.Blazor.p33ll9g8os.bundle.scp.css was not modified
+2025-09-19 08:41:02.490 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.490 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.PermissionManagement.Blazor/Volo.Abp.PermissionManagement.Blazor.p33ll9g8os.bundle.scp.css - 304 null text/css 3.2239ms
+2025-09-19 08:41:02.499 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2025-09-19 08:41:02.499 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2025-09-19 08:41:02.499 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-09-19 08:41:02.499 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2025-09-19 08:41:02.499 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2025-09-19 08:41:02.511 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.511 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.511 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.511 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.511 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.512 +07:00 [INF] The file _content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css was not modified
+2025-09-19 08:41:02.512 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.512 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 499 null text/css 12.7143ms
+2025-09-19 08:41:02.512 +07:00 [INF] Sending file. Request path: '_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/m3eknofir4-rlu9ca3yha.gz'
+2025-09-19 08:41:02.512 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.512 +07:00 [INF] Sending file. Request path: '_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/4fh1mvs9e3-rwlplotmc9.gz'
+2025-09-19 08:41:02.512 +07:00 [INF] Sending file. Request path: '_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/rsrgg46xj8-y4zpupyy6l.gz'
+2025-09-19 08:41:02.512 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.512 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.512 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 499 9548 text/css 13.2617ms
+2025-09-19 08:41:02.512 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 499 3590 text/css 13.474ms
+2025-09-19 08:41:02.512 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 499 161 text/css 13.1546ms
+2025-09-19 08:41:02.512 +07:00 [INF] Sending file. Request path: '_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/e7v19mgtln-fuml5o783n.gz'
+2025-09-19 08:41:02.512 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:02.512 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 499 27547 text/css 13.255ms
+2025-09-19 08:41:03.274 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/authentication/login-callback?code=r4LDfwXuHTUu4HOYqJnyg2FntcWikMLiqcXYIhxLFIE&state=70bf0b2dfa2340678084f26d07c8b033&iss=https%3A%2F%2Flocalhost%3A44328%2F&culture=en&ui-culture=en - null null
+2025-09-19 08:41:03.275 +07:00 [INF] Executing endpoint '/authentication/{action} (/authentication/{action})'
+2025-09-19 08:41:03.276 +07:00 [INF] Executed endpoint '/authentication/{action} (/authentication/{action})'
+2025-09-19 08:41:03.276 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/authentication/login-callback?code=r4LDfwXuHTUu4HOYqJnyg2FntcWikMLiqcXYIhxLFIE&state=70bf0b2dfa2340678084f26d07c8b033&iss=https%3A%2F%2Flocalhost%3A44328%2F&culture=en&ui-culture=en - 200 null text/html; charset=utf-8 1.5861ms
+2025-09-19 08:41:03.283 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/global.css - null null
+2025-09-19 08:41:03.283 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/blazor.web.js - null null
+2025-09-19 08:41:03.283 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/Acme.BookStore.Blazor.Client.styles.css - null null
+2025-09-19 08:41:03.283 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/global.js - null null
+2025-09-19 08:41:03.283 +07:00 [INF] The file /global.css was not modified
+2025-09-19 08:41:03.283 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/global.css - 304 null text/css 0.2583ms
+2025-09-19 08:41:03.283 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:03.284 +07:00 [INF] Executing endpoint 'Blazor web static files'
+2025-09-19 08:41:03.284 +07:00 [INF] The file /global.js was not modified
+2025-09-19 08:41:03.284 +07:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-09-19 08:41:03.284 +07:00 [INF] Executed endpoint 'Blazor web static files'
+2025-09-19 08:41:03.284 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/blazor.web.js - 304 null text/javascript 0.2999ms
+2025-09-19 08:41:03.284 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/global.js - 304 null application/javascript 0.204ms
+2025-09-19 08:41:03.284 +07:00 [INF] Sending file. Request path: 'Acme.BookStore.Blazor.Client.styles.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/8kse7j5v2y-xg1yoq7g4i.gz'
+2025-09-19 08:41:03.284 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:03.284 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/Acme.BookStore.Blazor.Client.styles.css - 200 527 text/css 0.6167ms
+2025-09-19 08:41:03.306 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.PermissionManagement.Blazor/Volo.Abp.PermissionManagement.Blazor.p33ll9g8os.bundle.scp.css - null null
+2025-09-19 08:41:03.306 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:03.306 +07:00 [INF] The file _content/Volo.Abp.PermissionManagement.Blazor/Volo.Abp.PermissionManagement.Blazor.p33ll9g8os.bundle.scp.css was not modified
+2025-09-19 08:41:03.306 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:03.307 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.PermissionManagement.Blazor/Volo.Abp.PermissionManagement.Blazor.p33ll9g8os.bundle.scp.css - 304 null text/css 0.2876ms
+2025-09-19 08:41:03.313 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2025-09-19 08:41:03.314 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:03.314 +07:00 [INF] Sending file. Request path: '_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/4fh1mvs9e3-rwlplotmc9.gz'
+2025-09-19 08:41:03.314 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:03.314 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 499 9548 text/css 0.8537ms
+2025-09-19 08:41:03.460 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_framework/resource-collection.rXXZL.js - null null
+2025-09-19 08:41:03.460 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:03.461 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:03.461 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_framework/resource-collection.rXXZL.js - 200 61168 application/javascript 1.7617ms
+2025-09-19 08:41:05.100 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/images/logo/leptonxlite/logo-light.png - null null
+2025-09-19 08:41:05.101 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.101 +07:00 [INF] The file images/logo/leptonxlite/logo-light.png was not modified
+2025-09-19 08:41:05.101 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.101 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/images/logo/leptonxlite/logo-light.png - 304 null image/png 1.385ms
+2025-09-19 08:41:05.131 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/images/getting-started/bg-01.png - null null
+2025-09-19 08:41:05.131 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/images/getting-started/img-support.png - null null
+2025-09-19 08:41:05.131 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/images/getting-started/img-blog.png - null null
+2025-09-19 08:41:05.131 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.WebAssembly.Theming/libs/fontawesome/webfonts/fa-solid-900.woff2 - null null
+2025-09-19 08:41:05.131 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/libs/bootstrap-icons/font/fonts/bootstrap-icons.woff2?30af91bf14e37666a085fb8a161ff36d - null null
+2025-09-19 08:41:05.131 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/images/getting-started/discord.svg - null null
+2025-09-19 08:41:05.131 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.131 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.131 +07:00 [INF] The file _content/Volo.Abp.AspNetCore.Components.WebAssembly.Theming/libs/fontawesome/webfonts/fa-solid-900.woff2 was not modified
+2025-09-19 08:41:05.131 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.132 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.WebAssembly.Theming/libs/fontawesome/webfonts/fa-solid-900.woff2 - 304 null font/woff2 0.3074ms
+2025-09-19 08:41:05.132 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.132 +07:00 [INF] The file images/getting-started/bg-01.png was not modified
+2025-09-19 08:41:05.132 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.132 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/images/getting-started/bg-01.png - 304 null image/png 1.3982ms
+2025-09-19 08:41:05.133 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.133 +07:00 [INF] The file images/getting-started/img-support.png was not modified
+2025-09-19 08:41:05.133 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.133 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/images/getting-started/img-support.png - 304 null image/png 1.9484ms
+2025-09-19 08:41:05.133 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/images/getting-started/img-community.png - null null
+2025-09-19 08:41:05.133 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.134 +07:00 [INF] The file images/getting-started/img-community.png was not modified
+2025-09-19 08:41:05.134 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.134 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/images/getting-started/img-community.png - 304 null image/png 0.1968ms
+2025-09-19 08:41:05.134 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/images/getting-started/book.png - null null
+2025-09-19 08:41:05.134 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/images/getting-started/x-white.svg - null null
+2025-09-19 08:41:05.134 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.134 +07:00 [INF] The file images/getting-started/book.png was not modified
+2025-09-19 08:41:05.134 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.134 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/images/getting-started/book.png - 304 null image/png 0.1691ms
+2025-09-19 08:41:05.134 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/images/getting-started/stack-overflow.svg - null null
+2025-09-19 08:41:05.134 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.134 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.134 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/images/getting-started/youtube.svg - null null
+2025-09-19 08:41:05.134 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/images/getting-started/instagram.svg - null null
+2025-09-19 08:41:05.135 +07:00 [INF] Sending file. Request path: 'images/getting-started/stack-overflow.svg'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/28twq1j2ny-6od8uvp79c.gz'
+2025-09-19 08:41:05.135 +07:00 [INF] Sending file. Request path: 'images/getting-started/x-white.svg'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/lwg237fg6v-4jifaybfna.gz'
+2025-09-19 08:41:05.135 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.135 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.135 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/images/getting-started/stack-overflow.svg - 200 620 image/svg+xml 0.7252ms
+2025-09-19 08:41:05.135 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/images/getting-started/x-white.svg - 200 338 image/svg+xml 0.9017ms
+2025-09-19 08:41:05.139 +07:00 [INF] Sending file. Request path: '_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/libs/bootstrap-icons/font/fonts/bootstrap-icons.woff2'. Physical path: '/Users/hungpn23/.nuget/packages/volo.abp.aspnetcore.components.web.leptonxlitetheme/4.3.2/staticwebassets/side-menu/libs/bootstrap-icons/font/fonts/bootstrap-icons.woff2'
+2025-09-19 08:41:05.139 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.139 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/libs/bootstrap-icons/font/fonts/bootstrap-icons.woff2?30af91bf14e37666a085fb8a161ff36d - 200 92064 font/woff2 7.9005ms
+2025-09-19 08:41:05.149 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.149 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.149 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.149 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.149 +07:00 [INF] The file images/getting-started/img-blog.png was not modified
+2025-09-19 08:41:05.149 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.149 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/images/getting-started/img-blog.png - 304 null image/png 17.8322ms
+2025-09-19 08:41:05.150 +07:00 [INF] Sending file. Request path: 'images/getting-started/discord.svg'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/h4ggbfotxp-bqu1smyl2i.gz'
+2025-09-19 08:41:05.150 +07:00 [INF] Sending file. Request path: 'images/getting-started/youtube.svg'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/0rfbyglsxh-7mwe32uy7y.gz'
+2025-09-19 08:41:05.150 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.151 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/images/getting-started/youtube.svg - 200 937 image/svg+xml 16.3921ms
+2025-09-19 08:41:05.151 +07:00 [INF] Sending file. Request path: 'images/getting-started/instagram.svg'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor.Client/obj/Debug/net9.0/compressed/4m04o0dpbn-szjimoympu.gz'
+2025-09-19 08:41:05.151 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.151 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/images/getting-started/instagram.svg - 200 6256 image/svg+xml 17.122ms
+2025-09-19 08:41:05.151 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:05.152 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/images/getting-started/discord.svg - 200 1405 image/svg+xml 20.2254ms
+2025-09-19 08:41:10.154 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise/utilities.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.154 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.155 +07:00 [INF] The file _content/Blazorise/utilities.js was not modified
+2025-09-19 08:41:10.155 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.155 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise/utilities.js?v=1.8.1.0 - 304 null text/javascript 0.7388ms
+2025-09-19 08:41:10.157 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise/button.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.157 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise/memoEdit.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.158 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise/textEdit.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.183 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise/vendors/sha512.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.183 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise/vendors/jsencrypt.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.199 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.199 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.199 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.199 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.199 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.199 +07:00 [INF] The file _content/Blazorise/textEdit.js was not modified
+2025-09-19 08:41:10.199 +07:00 [INF] The file _content/Blazorise/button.js was not modified
+2025-09-19 08:41:10.199 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.199 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.200 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise/textEdit.js?v=1.8.1.0 - 304 null text/javascript 41.5244ms
+2025-09-19 08:41:10.200 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise/button.js?v=1.8.1.0 - 304 null text/javascript 42.5145ms
+2025-09-19 08:41:10.200 +07:00 [INF] Sending file. Request path: '_content/Blazorise/memoEdit.js'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/cupdfacrup-ohau6hp0bl.gz'
+2025-09-19 08:41:10.200 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.200 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise/memoEdit.js?v=1.8.1.0 - 200 1018 text/javascript 42.5214ms
+2025-09-19 08:41:10.200 +07:00 [INF] Sending file. Request path: '_content/Blazorise/vendors/jsencrypt.js'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/c4jog3xkz4-pybrzh7rdh.gz'
+2025-09-19 08:41:10.200 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.200 +07:00 [INF] Sending file. Request path: '_content/Blazorise/vendors/sha512.js'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/s7z50pshxl-luevd9t85z.gz'
+2025-09-19 08:41:10.200 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.200 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise/vendors/jsencrypt.js?v=1.8.1.0 - 200 55472 text/javascript 17.2861ms
+2025-09-19 08:41:10.201 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise/vendors/sha512.js?v=1.8.1.0 - 200 17932 text/javascript 17.823ms
+2025-09-19 08:41:10.203 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise/vendors/Behave.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.205 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise/validators/RegExMaskValidator.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.205 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise/validators/NoValidator.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.205 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.205 +07:00 [INF] The file _content/Blazorise/validators/RegExMaskValidator.js was not modified
+2025-09-19 08:41:10.205 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.205 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise/validators/RegExMaskValidator.js?v=1.8.1.0 - 304 null text/javascript 0.139ms
+2025-09-19 08:41:10.205 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise/validators/NumericMaskValidator.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.206 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise/validators/DateTimeMaskValidator.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.209 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.209 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.209 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.209 +07:00 [INF] The file _content/Blazorise/validators/DateTimeMaskValidator.js was not modified
+2025-09-19 08:41:10.209 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.209 +07:00 [INF] The file _content/Blazorise/validators/NoValidator.js was not modified
+2025-09-19 08:41:10.209 +07:00 [INF] The file _content/Blazorise/validators/NumericMaskValidator.js was not modified
+2025-09-19 08:41:10.209 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise/validators/DateTimeMaskValidator.js?v=1.8.1.0 - 304 null text/javascript 3.2973ms
+2025-09-19 08:41:10.209 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.209 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.209 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise/validators/NumericMaskValidator.js?v=1.8.1.0 - 304 null text/javascript 3.8617ms
+2025-09-19 08:41:10.209 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise/validators/NoValidator.js?v=1.8.1.0 - 304 null text/javascript 4.1082ms
+2025-09-19 08:41:10.216 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.216 +07:00 [INF] Sending file. Request path: '_content/Blazorise/vendors/Behave.js'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/bwhf9i0xrj-k77rf775v5.gz'
+2025-09-19 08:41:10.216 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.216 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise/vendors/Behave.js?v=1.8.1.0 - 200 2841 text/javascript 12.527ms
+2025-09-19 08:41:10.220 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44388/_content/Blazorise.DataGrid/datagrid.js?v=1.8.1.0 - null null
+2025-09-19 08:41:10.220 +07:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.221 +07:00 [INF] Sending file. Request path: '_content/Blazorise.DataGrid/datagrid.js'. Physical path: '/Users/hungpn23/Acme.BookStore/src/Acme.BookStore.Blazor/obj/Debug/net9.0/compressed/j2ds3yafnj-q3cjjjaqc3.gz'
+2025-09-19 08:41:10.221 +07:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-09-19 08:41:10.221 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44388/_content/Blazorise.DataGrid/datagrid.js?v=1.8.1.0 - 200 6086 text/javascript 0.9732ms
